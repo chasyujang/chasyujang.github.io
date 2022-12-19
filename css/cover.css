@@ -340,8 +340,12 @@ header {
   color: red;
 }
 
+.section5-table tr .sat{
+  color: blue;
+}
+
 .section5-table tr .check{
-  color: white;
+  color: blue;
   background-color: chocolate;
   border-radius: 50px;
 }
