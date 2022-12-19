@@ -327,7 +327,7 @@ header {
   font-family: NanumMyeongjo-r;
   line-height: 1.5em;
   font-size: 1.3rem;
-  border-top: 0px;
+  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
@@ -477,4 +477,5 @@ header {
 
 .ct {
   caption-side: top;
+  text-align: center;
 }
