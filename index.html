@@ -361,8 +361,17 @@
                 var map = new naver.maps.Map('map', {
                     useStyleMap: true,
                     zoom: 16,
-                    center: new naver.maps.LatLng(37.5666103, 126.9783882)
+                    center: new naver.maps.LatLng(37.555073, 126.892030)
                 });
+				
+				var marker = new naver.maps.Marker({
+				position: new naver.maps.LatLng(37.555073, 126.892030),
+				map: map
+
+				});
+
+				var map = new naver.maps.Map('map', mapOptions);
+				
 			</script>
 
             <div class="wow fadeInUp section6-location p-3">
