@@ -356,61 +356,27 @@
             </div>
             <br/>
             <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
-			<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gntsy0iiev"></script>
-			<script>
-  /*              var map = new naver.maps.Map('map', {
-                    useStyleMap: true,
-                    zoom: 16,
-                    center: new naver.maps.LatLng(37.4989, 126.9965)
-                });*/
-				var map = new naver.maps.Map('map', {
-                  center: new naver.maps.LatLng(37.4989, 126.9965),
-                  zoom: 17,
-                  minZoom: 8, //지도의 최소 줌 레벨
-                  zoomControl: true, //줌 컨트롤의 표시 여부
-                  zoomControlOptions: { //줌 컨트롤의 옵션
-                      position: naver.maps.Position.TOP_RIGHT
-                }});
-				
-				var marker = new naver.maps.Marker({
-				position: new naver.maps.LatLng(37.4989, 126.9965),
-				map: map
 
-				});
-				
-                var contentString = [
-                '<div class="iw_inner" style="padding:5px; margin: 5px 0px 5px 0px; width: 150px; height: 45px; text-align: center; ">',
-                '   <p style="foint-size: 2rem; margin: 0;">엘루체컨벤션</p>',
-                '   <p style="font-size: 0.8rem; margin: 0;">서울 서초구 신반포로 23</p>',
-                '</div>'
-                ].join('');
-         
-                var infowindow = new naver.maps.InfoWindow({
-                    content: contentString,
-                    maxWidth: 200,
-                    height: 50,
-                    backgroundColor: "white",
-                    borderColor: "black",
-                    borderWidth: 2,
-                    disableAnchor: true,
-                    textAlign: "center",
-                    margin: "auto",
-         
-                    pixelOffset: new naver.maps.Point(0, -5)
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce0aecd6418f8f9b060af51cc4cc518a"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.4990, 126.9965), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+                
+                // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+                var map = new kakao.maps.Map(mapContainer, mapOption); 
+                    var markerPosition  = new kakao.maps.LatLng(37.4990, 126.9965);
+                
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
                 });
-         
-                naver.maps.Event.addListener(marker, "click", function(e) {
-                    if (infowindow.getMap()) {
-                        infowindow.close();
-                    } else {
-                        infowindow.open(map, marker);
-                    }
-                });
-         
-                infowindow.open(map, marker);
-				//var map = new naver.maps.Map('map', mapOptions);
-				
-			</script>
+                
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+            </script>
 
             <div class="wow fadeInUp section6-location p-3">
                 <div class="accordion" id="accordionExample">
