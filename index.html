@@ -377,8 +377,38 @@
 				map: map
 
 				});
-
-				var map = new naver.maps.Map('map', mapOptions);
+				
+                var contentString = [
+                '<div class="iw_inner" style="padding:5px; margin: 5px 0px 5px 0px; width: 150px; height: 45px; text-align: center; ">',
+                '   <p style="foint-size: 2rem; margin: 0;">엘루체컨벤션</p>',
+                '   <p style="font-size: 0.8rem; margin: 0;">서울 서초구 신반포로 23</p>',
+                '</div>'
+                ].join('');
+         
+                var infowindow = new naver.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 200,
+                    height: 50,
+                    backgroundColor: "white",
+                    borderColor: "black",
+                    borderWidth: 2,
+                    disableAnchor: true,
+                    textAlign: "center",
+                    margin: "auto",
+         
+                    pixelOffset: new naver.maps.Point(0, -5)
+                });
+         
+                naver.maps.Event.addListener(marker, "click", function(e) {
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
+                    }
+                });
+         
+                infowindow.open(map, marker);
+				//var map = new naver.maps.Map('map', mapOptions);
 				
 			</script>
 
