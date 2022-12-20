@@ -358,15 +358,19 @@
             <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
 			<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gntsy0iiev"></script>
 			<script>
-                var map = new naver.maps.Map('map', {
+  /*              var map = new naver.maps.Map('map', {
                     useStyleMap: true,
-                zoom: 17, //지도의 초기 줌 레벨
-                minZoom: 8, //지도의 최소 줌 레벨
-                zoomControl: true, //줌 컨트롤의 표시 여부
-                zoomControlOptions: { //줌 컨트롤의 옵션
-                position: naver.maps.Position.TOP_RIGHT
+                    zoom: 16,
                     center: new naver.maps.LatLng(37.4989, 126.9965)
-                });
+                });*/
+				var map = new naver.maps.Map('map', {
+                  center: new naver.maps.LatLng(37.50180355734507, 126.98714909796672),
+                  zoom: 17,
+                  minZoom: 8, //지도의 최소 줌 레벨
+                  zoomControl: true, //줌 컨트롤의 표시 여부
+                  zoomControlOptions: { //줌 컨트롤의 옵션
+                      position: naver.maps.Position.TOP_RIGHT
+                }});
 				
 				var marker = new naver.maps.Marker({
 				position: new naver.maps.LatLng(37.4989, 126.9965),
