@@ -407,7 +407,26 @@
             <br/><br/>
             <br/><br/>
         </div>
-		
+		// Html
+<img onclick="pauseVid()" src="img/button-sound.png" height="13" width="13" />
+
+<audio id="myVideo" width="0" height="0">
+  <source src="music.mp3" type="audio/mpeg">
+  Tarayıcınız Html5'i desteklemiyor.
+</audio>
+
+// Music control 
+<script> 
+	var vid = document.getElementById("myVideo"); 
+	vid.autoplay = true;`
+	function pauseVid() { 
+		if (vid.paused === true) {
+			vid.play(); 
+		}  else {
+			vid.pause(); 
+		}
+	} 
+</script> 
 		<hr class="cover-container"/>
         <div class="wow fadeInUp section7 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>
