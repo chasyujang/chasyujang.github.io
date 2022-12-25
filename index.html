@@ -476,7 +476,29 @@
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
                             신한은행 1 <br>
-							신한은행 2
+			    신한은행 2 
+<div id="app">
+  <button>dummy 복사하기</button>
+</div>
+
+<script>
+  function copyText() {
+    const temp = document.createElement('textarea')
+
+    document.body.appendChild(temp)
+
+    temp.value = 'dummy'
+    temp.select()
+
+    document.execCommand('copy')
+    document.body.removeChild(temp)
+
+    window.alert('복사 완료')
+  }
+
+  const button = document.querySelector('button')
+  button.addEventListener('click', copyText)
+</script>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
