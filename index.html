@@ -453,6 +453,27 @@
                         <div class="modal-body section7-modal section7-modal-content">
                             우리은행 1 <br>
                             장봉석 - 하나은행 / 145 910324 19207
+						<div id="app">
+                        <button>계좌번호 복사</button>
+                        </div>
+                      
+                        <script>
+                        function copyText() {
+                          const temp = document.createElement('textarea')
+                      
+                          document.body.appendChild(temp)
+                      
+                          temp.value = '14591032419207'
+                          temp.select()
+                      
+                          document.execCommand('copy')
+                          document.body.removeChild(temp)
+                      
+                        }
+                      
+                        const button = document.querySelector('button')
+                        button.addEventListener('click', copyText)
+                        </script>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
