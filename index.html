@@ -461,14 +461,12 @@
                         function copyText() {
                           const temp = document.createElement('textarea')
                       
-                          document.body.appendChild(temp)
+                          document.getElementById(temp)
                       
                           temp.value = '14591032419207'
                           temp.select()
                       
                           document.execCommand('copy')
-                          document.body.removeChild(temp)
-                      
                         }
                       
                         const button = document.querySelector('button')
