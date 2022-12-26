@@ -407,6 +407,25 @@
             <br/><br/>
             <br/><br/>
         </div>
+		
+								<div id="app">
+                        <button>계좌번호 복사</button>
+                        </div>
+                      
+                        <script>
+                        function copyText() {
+                          const temp = document.createElement('textarea')
+                      
+                          document.getElementById(temp)
+                      
+                          temp.value = '14591032419207'
+                          temp.select()
+                      
+                          document.execCommand('copy')
+                        }
+                      
+                        const button = document.querySelector('button')
+                        button.addEventListener('click', copyText)
 <!--
 // Html
 <img onclick="pauseVid()" src="img/button-sound.png" height="13" width="13" />
