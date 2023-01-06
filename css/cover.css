@@ -485,21 +485,10 @@ header {
  Button
  */
  
-.box01{
-    text-align: center;
-}
-.box01 input{
-    border: none;
-    font-size: 15px;
-    outline: none;
-    text-align: center;
-}
-.box01 button{
-    border:none;
-    width:60px;
-    max-width: 100px;
-    vertical-align: bottom;
-}
-.box01 button img{
-    width: 100%;
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
 }
