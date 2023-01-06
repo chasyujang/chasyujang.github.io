@@ -407,28 +407,6 @@
             <br/><br/>
             <br/><br/>
         </div>		
-<!--
-// Html
-<img onclick="pauseVid()" src="img/button-sound.png" height="13" width="13" />
-
-<audio id="myVideo" width="0" height="0">
-  <source src="music.mp3" type="audio/mpeg">
-  Tarayıcınız Html5'i desteklemiyor.
-</audio>
-
-// Music control 
-<script> 
-	var vid = document.getElementById("myVideo"); 
-	vid.autoplay = true;`
-	function pauseVid() { 
-		if (vid.paused === true) {
-			vid.play(); 
-		}  else {
-			vid.pause(); 
-		}
-	} 
-</script> 
--->
 		<hr class="cover-container"/>
         <div class="wow fadeInUp section7 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>
@@ -453,25 +431,26 @@
                         <div class="modal-body section7-modal section7-modal-content">
                             우리은행 1 <br>
                             장봉석 - 하나은행 / 145 910324 19207
-						<div id="app">
-                        <button>계좌번호 복사</button>
-                        </div>
-                      
-<!--                    <script>
-                        function copyText() {
-                          const temp = document.createElement('textarea')
-                      
-                          document.getElementById(temp)
-                      
-                          temp.value = '14591032419207'
-                          temp.select()
-                      
-                          document.execCommand('copy')
-                        }
-                      
-                        const button = document.querySelector('button')
-                        button.addEventListener('click', copyText)
-                        </script>-->
+							  <p class="box01">
+								<input id="myInput" value="1번 텍스트 복사하기" readonly>
+								<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
+								</button>
+								</p>
+								<script>
+									function copy_to_clipboard(event) {    
+										var copyText = event.target.parentNode.previousElementSibling;
+										copyText.select();
+										copyText.setSelectionRange(0, 99999);
+										document.execCommand("Copy");
+										alert('복사되었습니다, 감사합니다.');
+									}     
+								</script>
+								
+
+
+
+
+							
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
