@@ -414,20 +414,6 @@
 			<br/>
             <p class="wow fadeInUp section7-title section7-main">신랑 신부에게 마음 전하기</p>
             <br/>
-			<p class="box01">
-								<input id="myInput" value="1번 텍스트 복사하기" readonly>
-								<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
-								</button>
-								</p>
-								<script>
-									function copy_to_clipboard(event) {    
-										var copyText = event.target.parentNode.previousElementSibling;
-										copyText.select();
-										copyText.setSelectionRange(0, 99999);
-										document.execCommand("Copy");
-										alert('복사되었습니다, 감사합니다.');
-									}     
-								</script>
             <!-- Button trigger modal -->
             <button type="button" class="wow fadeInUp btn section7-button" data-toggle="modal" data-target="#groom">
                 신랑 혼주 계좌번호 보기
@@ -443,8 +429,34 @@
                             </button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            우리은행 1 <br>
-                            장봉석 - 하나은행 / 145 910324 19207
+                            장봉석 <br>        
+                            <div id="copyTxt">하나 145 910324 19207
+                                <button type="button" onclick="copyT()"/><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt=""></button>
+                            </div>
+                            <script>
+                            
+                                      function copyT() {
+                            
+                                          var obj = document.getElementById("copyTxt");
+                            
+                                          var range = document.createRange();
+                            
+                                          range.selectNode(obj.childNodes[0]); //텍스트 정보를 Range 객체에 저장
+                            
+                                          var sel = window.getSelection();
+                            
+                                          sel.removeAllRanges(); //기존 선택정보 삭제
+                            
+                                          sel.addRange(range); //텍스트 정보 선택
+                            
+                                          document.execCommand("copy"); //복사
+                            
+                                          sel.removeRange(range); //선택 정보 삭제
+                            
+                            
+                                      }
+                            
+                              </script>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
