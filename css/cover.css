@@ -496,5 +496,6 @@ button:active {
 input,
 button{
 	border:none;
+	background-color:transparent;
 	/*border-radius:4px 가능 */
 }
