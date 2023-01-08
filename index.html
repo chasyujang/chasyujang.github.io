@@ -65,6 +65,31 @@
             $("#d-day").html(result);
         });
     </script>
+	<script>
+                            
+                                      function copyT(copyTxt) {
+                            
+                                          var obj = document.getElementById(copyTxt);
+                            
+                                          var range = document.createRange();
+                            
+                                          range.selectNode(obj.childNodes[0]); //텍스트 정보를 Range 객체에 저장
+                            
+                                          var sel = window.getSelection();
+                            
+                                          sel.removeAllRanges(); //기존 선택정보 삭제
+                            
+                                          sel.addRange(range); //텍스트 정보 선택
+                            
+                                          document.execCommand("copy"); //복사
+                            
+                                          sel.removeRange(range); //선택 정보 삭제
+										  
+										  alert('복사완료');
+                            
+                                      }
+                            
+                              </script>
 </head>
 <body class="text-center">
 <div class="top-div">
@@ -430,34 +455,17 @@
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
                             장봉석 <br>        
-                            <div id="copyTxt">하나 145 910324 19207
-                                <button type="button" onclick="copyT()"/><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt=""></button>
+                            <div id="copy1">하나 145 910324 19207
+                                <button type="button" onclick="copyT('copy1')"/><img src="img/copy" alt=""></button>
+                            </div> <br>
+							장세욱<br>
+							<div id="copy2">국민 145 910324 19207
+                                <button type="button" onclick="copyT('copy2')"/><img src="img/copy" alt=""></button>
+                            </div><br>
+							권희숙<br>
+							<div id="copy2">우리 145 910324 19207
+                                <button type="button" onclick="copyT('copy2')"/><img src="img/copy" alt=""></button>
                             </div>
-                            <script>
-                            
-                                      function copyT() {
-                            
-                                          var obj = document.getElementById("copyTxt");
-                            
-                                          var range = document.createRange();
-                            
-                                          range.selectNode(obj.childNodes[0]); //텍스트 정보를 Range 객체에 저장
-                            
-                                          var sel = window.getSelection();
-                            
-                                          sel.removeAllRanges(); //기존 선택정보 삭제
-                            
-                                          sel.addRange(range); //텍스트 정보 선택
-                            
-                                          document.execCommand("copy"); //복사
-                            
-                                          sel.removeRange(range); //선택 정보 삭제
-										  
-										  alert('복사완료');
-                            
-                                      }
-                            
-                              </script>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
