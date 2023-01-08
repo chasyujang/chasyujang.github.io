@@ -492,3 +492,9 @@ button:active {
   outline: none;
   box-shadow: none;
 }
+
+input,
+button{
+	border:none;
+	/*border-radius:4px 가능 */
+}
