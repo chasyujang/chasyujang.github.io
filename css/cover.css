@@ -236,7 +236,7 @@ header {
 .section2-sub {
   font-family: NanumMyeongjo-b;
   line-height: 2em;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .section3 {
@@ -518,4 +518,74 @@ button{
 .mid_img{
     transition: all .8s ease-out;
     box-sizing: border-box;
+}
+
+.members-wrap{
+    padding: 1.2rem 0;
+    border-left: 0;
+    border-right: 0;
+    letter-spacing: 1px;
+}
+
+.members-wrap .relation {
+    font-size: .8rem;
+    color: #8a857f;
+}
+
+.fade-in {
+    transition: all .8s ease-out;
+    box-sizing: border-box;
+}
+
+.mcard-intro .title[data-v-39666873] {
+    padding: 3rem 1rem;
+    display: flex;
+    background: #fff;
+    font-size: 1.1rem;
+}
+
+.mcard-intro .title .groom[data-v-39666873] {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mcard-intro .title .date[data-v-39666873] {
+    flex: 1;
+    height: 3.75rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mcard-intro .title .date .month[data-v-39666873] {
+    align-self: flex-start;
+}
+.mcard-intro .title .date .divider[data-v-39666873] {
+    text-align: center;
+    width: 12px;
+}
+
+.mcard-intro .title .date[data-v-39666873] {
+    flex: 1;
+    height: 3.75rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mcard-intro .title .date .day[data-v-39666873] {
+    align-self: flex-end;
+}
+
+.mcard-intro .title .bride[data-v-39666873] {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
