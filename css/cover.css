@@ -499,3 +499,23 @@ button{
 	background-color:transparent;
 	/*border-radius:4px 가능 */
 }
+
+
+/*
+2.26 추가
+*/
+
+.flower{
+	height: 18px;
+    vertical-align: sub;
+}
+
+.c-bold {
+    font-family: var(--font-bold);
+    font-weight: var(--font-bold-weight);
+}
+
+.mid_img{
+    transition: all .8s ease-out;
+    box-sizing: border-box;
+}
