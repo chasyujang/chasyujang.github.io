@@ -550,7 +550,6 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
-	font-color: #0000000;
 }
 
 .mcard-intro .title .date[data-v-39666873] {
@@ -568,6 +567,13 @@ button{
 .mcard-intro .title .date .divider[data-v-39666873] {
     text-align: center;
     width: 12px;
+}
+.divider2[data-v-39666873] {
+    margin: 0 auto;
+    width: 0.5px;
+    height: 60px;
+    background-color: #424242;
+    transform: rotate(45deg);
 }
 
 .mcard-intro .title .date[data-v-39666873] {
