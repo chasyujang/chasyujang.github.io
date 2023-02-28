@@ -550,6 +550,7 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
+	font-color: #0000000;
 }
 
 .mcard-intro .title .date[data-v-39666873] {
