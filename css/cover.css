@@ -589,3 +589,31 @@ button{
     justify-content: center;
     flex-direction: column;
 }
+
+.gradient-m[data-v-75277baa] {
+    -webkit-mask-image: linear-gradient(180deg,transparent,rgba(0,0,0,.013) 1.1%,rgba(0,0,0,.049) 2.3%,rgba(0,0,0,.104) 3.58%,rgba(0,0,0,.175) 4.94%,rgba(0,0,0,.259) 6.34%,rgba(0,0,0,.352) 7.78%,rgba(0,0,0,.45) 9.26%,rgba(0,0,0,.55) 10.74%,rgba(0,0,0,.648) 12.22%,rgba(0,0,0,.741) 13.66%,rgba(0,0,0,.825) 15.06%,rgba(0,0,0,.896) 16.42%,rgba(0,0,0,.951) 17.7%,rgba(0,0,0,.987) 18.9%,#000 20%,#000 80%,rgba(0,0,0,.987) 81.1%,rgba(0,0,0,.951) 82.3%,rgba(0,0,0,.896) 83.58%,rgba(0,0,0,.825) 84.94%,rgba(0,0,0,.741) 86.34%,rgba(0,0,0,.648) 87.78%,rgba(0,0,0,.55) 89.26%,rgba(0,0,0,.45) 90.74%,rgba(0,0,0,.352) 92.22%,rgba(0,0,0,.259) 93.66%,rgba(0,0,0,.175) 95.06%,rgba(0,0,0,.104) 96.42%,rgba(0,0,0,.049) 97.7%,rgba(0,0,0,.013) 98.9%,transparent);
+    mask-image: linear-gradient(180deg,transparent,rgba(0,0,0,.013) 1.1%,rgba(0,0,0,.049) 2.3%,rgba(0,0,0,.104) 3.58%,rgba(0,0,0,.175) 4.94%,rgba(0,0,0,.259) 6.34%,rgba(0,0,0,.352) 7.78%,rgba(0,0,0,.45) 9.26%,rgba(0,0,0,.55) 10.74%,rgba(0,0,0,.648) 12.22%,rgba(0,0,0,.741) 13.66%,rgba(0,0,0,.825) 15.06%,rgba(0,0,0,.896) 16.42%,rgba(0,0,0,.951) 17.7%,rgba(0,0,0,.987) 18.9%,#000 20%,#000 80%,rgba(0,0,0,.987) 81.1%,rgba(0,0,0,.951) 82.3%,rgba(0,0,0,.896) 83.58%,rgba(0,0,0,.825) 84.94%,rgba(0,0,0,.741) 86.34%,rgba(0,0,0,.648) 87.78%,rgba(0,0,0,.55) 89.26%,rgba(0,0,0,.45) 90.74%,rgba(0,0,0,.352) 92.22%,rgba(0,0,0,.259) 93.66%,rgba(0,0,0,.175) 95.06%,rgba(0,0,0,.104) 96.42%,rgba(0,0,0,.049) 97.7%,rgba(0,0,0,.013) 98.9%,transparent);
+}
+
+.intro-blend-image[data-v-75277baa] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.intro-blend-video[data-v-75277baa] {
+    display: none;
+    position: absolute;
+    mix-blend-mode: screen;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.mcard-intro .date-place[data-v-39666873] {
+    padding: 3rem 0;
+    background: #fff;
+    box-shadow: 1px 2px 3px rgb(0 0 0 / 5%);
+    text-shadow: -1px -1px 0 #fff;
+}
