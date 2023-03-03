@@ -26,6 +26,11 @@
   font-family: 'Kotra';
   src: url('../font/Kotra.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('../font/NotoSansKR.ttf') format('truetype');
+}
+
 
 
 
@@ -742,8 +747,8 @@ button{
 	position:relative;
 	display:block;
 	padding-top:3.438rem;
-	font-family:"Noto Sans KR";
-	font-size:0.688rem;
+	font-family:"NotoSansKR";
+	font-size:0.8rem;
 	font-weight:400;
 	line-height:1rem;
 	color:#111;
