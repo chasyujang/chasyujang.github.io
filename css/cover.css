@@ -736,11 +736,16 @@ button{
 	line-height:0;
 	text-align: center;
 }
+
+.location-section .link ul{
+	padding:0
+}
+
 .location-section .link li{
 	display:inline-block;
 	vertical-align:top;
 	width:3.750rem;
-	padding:0 0.625rem;
+	padding:0 2rem;
 	box-sizing:content-box;
 }
 .location-section .link a{
