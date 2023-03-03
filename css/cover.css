@@ -18,6 +18,16 @@
   font-family: 'DancingScript-b';
   src: url('../font/DancingScript-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Dovemayo';
+  src: url('../font/Dovemayo.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kotra';
+  src: url('../font/Kotra.ttf') format('truetype');
+}
+
+
 
 /* Links */
 a,
@@ -537,7 +547,9 @@ button{
     box-sizing: border-box;
 }
 
+/*1번*/
 .mcard-intro .title[data-v-39666873] {
+	font-family:Dovemayo;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
@@ -622,7 +634,9 @@ button{
     width: 100%;
 }
 
+/*2번*/
 .mcard-intro .date-place[data-v-39666873] {
+	font-family:Kotra;
     padding: 3rem 0;
     background: #fff;
     box-shadow: 1px 2px 3px rgb(0 0 0 / 5%);
@@ -707,4 +721,55 @@ button{
 .img-blur {
     filter: blur(var(--img-blur));
     -webkit-filter: blur(var(--img-blur));
+}
+
+
+.location-section .link{
+	padding:1.250rem 0 0.938rem;
+	background:#fafafa;
+	font-size: 0;
+	line-height:0;
+	text-align: center;
+}
+.location-section .link li{
+	display:inline-block;
+	vertical-align:top;
+	width:3.750rem;
+	padding:0 0.625rem;
+	box-sizing:content-box;
+}
+.location-section .link a{
+	position:relative;
+	display:block;
+	padding-top:3.438rem;
+	font-family:"Noto Sans KR";
+	font-size:0.688rem;
+	font-weight:400;
+	line-height:1rem;
+	color:#111;
+	text-decoration:none;
+}
+.location-section .link a:after{
+	content:'';
+	display:block;
+	position: absolute;
+	left: 50%; top: 0;
+	margin-left:-1.563rem; 
+	width:3.125rem;
+	height:3.125rem;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-size:3.125rem;
+}
+.location-section .link .tmap:after{
+	background-image: url("../img/location_tmap.png");
+}
+.location-section .link .kakaonavi:after{
+	background-image: url("../img/location_kakaonavi.png");
+}
+.location-section .link .navermap:after{
+	background-image: url("../img/location_navermap.png");
+}
+.location-section .link .kakaomap:after{
+	background-image: url("../img/location_kakaomap.png");
 }
