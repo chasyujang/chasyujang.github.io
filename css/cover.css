@@ -640,3 +640,71 @@ button{
     background: #fff;
     --wave-color: #fff;
 }
+
+.greetings-wrap {
+    margin: 1px 0;
+    padding: 3rem 0;
+}
+
+.fade-in {
+    transition: all .8s ease-out;
+    box-sizing: border-box;
+}
+
+.contact-box {
+    margin: 0 auto;
+    max-width: 260px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    text-align: center;
+    font-size: .8rem;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+.members-wrap .relation {
+    font-size: .8rem;
+    color: #8a857f;
+}
+
+.phone-circle {
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+}
+
+.phone-circle svg {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-top: -2px;
+    fill: var(--primary-color);
+}
+
+.m-subtitle {
+    letter-spacing: .18rem;
+    font-size: .5rem;
+}
+
+.greetings-title {
+    padding-bottom: 1.5rem;
+}
+
+.c-bold {
+    font-family: var(--font-bold);
+    font-weight: var(--font-bold-weight);
+}
+
+.greetings-wrap .image img {
+    display: block;
+    width: 100%;
+    margin: 3rem 0 0;
+    pointer-events: none;
+}
+
+.img-blur {
+    filter: blur(var(--img-blur));
+    -webkit-filter: blur(var(--img-blur));
+}
