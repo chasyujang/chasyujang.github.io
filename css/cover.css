@@ -30,6 +30,14 @@
   font-family: 'NotoSansKR';
   src: url('../font/NotoSansKR.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'SunBatang-l';
+  src: url('../font/SunBatang-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SunBatang-m';
+  src: url('../font/SunBatang-Medium.ttf') format('truetype');
+}
 
 
 
@@ -249,9 +257,9 @@ header {
 }
 
 .section2-sub {
-  font-family: NanumMyeongjo-b;
+  font-family: Sunbatang-m;
   line-height: 2em;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section3 {
@@ -304,7 +312,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #55CCCC;
+  color: #CC9999;
 }
 
 .section4-sec3-g {
@@ -313,7 +321,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #FF99CC;
+  color: #CC9999;
 }
 
 .section5 {
@@ -554,7 +562,7 @@ button{
 
 /*1번*/
 .mcard-intro .title[data-v-39666873] {
-	font-family:Dovemayo;
+	font-family: SunBatang-l;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
@@ -641,7 +649,8 @@ button{
 
 /*2번*/
 .mcard-intro .date-place[data-v-39666873] {
-	font-family:Kotra;
+	font-family: Sunbatang-l;
+	font-size: 1rem;
     padding: 3rem 0;
     background: #fff;
     box-shadow: 1px 2px 3px rgb(0 0 0 / 5%);
