@@ -259,7 +259,7 @@ header {
 .section2-sub {
   font-family: Sunbatang-m;
   line-height: 2em;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .section3 {
@@ -341,7 +341,7 @@ header {
 }
 
 .section5-sub {
-  font-family: NanumMyeongjo-r;
+  font-family: Sunbatang-m;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -562,7 +562,7 @@ button{
 
 /*1번*/
 .mcard-intro .title[data-v-39666873] {
-	font-family: SunBatang-l;
+	font-family: SunBatang-m;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
@@ -649,8 +649,8 @@ button{
 
 /*2번*/
 .mcard-intro .date-place[data-v-39666873] {
-	font-family: Sunbatang-l;
-	font-size: 1rem;
+	font-family: Sunbatang-m;
+	font-size: 1.1rem;
     padding: 3rem 0;
     background: #fff;
     box-shadow: 1px 2px 3px rgb(0 0 0 / 5%);
@@ -669,7 +669,9 @@ button{
     --wave-color: #fff;
 }
 
+/*3번*/
 .greetings-wrap {
+	font-family:sunbatang-l;
     margin: 1px 0;
     padding: 3rem 0;
 }
