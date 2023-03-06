@@ -271,7 +271,7 @@ header {
 }
 
 .section2-sub {
-  font-family: Sunbatang-m;
+  font-family: Sunbatang-l;
   line-height: 2em;
   font-size: 1rem;
 }
@@ -354,6 +354,13 @@ header {
   font-size: 2rem;
 }
 
+.section5-main2 {
+  font-family: DancingScript-b;
+  line-height: 1.5em;
+  font-size: 2rem;
+  color: #BD4F4F;
+}
+
 .section5-sub {
   font-family: Sunbatang-m;
   line-height: 1.5em;
@@ -413,7 +420,7 @@ header {
 }
 
 .section6-location-main {
-  font-family: NanumMyeongjo-e;
+  font-family: sunbatang-m;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -425,7 +432,7 @@ header {
 }
 
 .section6-location-sub {
-  font-family: NanumMyeongjo-r;
+  font-family: sunbatang-l;
   line-height: 1.5em;
   font-size: 1.2rem;
   text-align: left;
@@ -454,13 +461,13 @@ header {
 }
 
 .section7-main {
-  font-family: NanumMyeongjo-b;
+  font-family: sunbatang-m;
   line-height: 1.4em;
   font-size: 1.4rem;
 }
 
 .section7-button {
-  font-family: NanumMyeongjo-b;
+  font-family: sunbatang-m;
   font-size: 1.2rem;
   background-color: #CC9999;
   color: #fff;
