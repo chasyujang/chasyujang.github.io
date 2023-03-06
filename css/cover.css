@@ -42,6 +42,10 @@
   font-family: 'Chassam';
   src: url('../font/Chassam.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'TAEBAEK';
+  src: url('../font/TAEBAEK.ttf') format('truetype');
+}
 
 
 
@@ -567,7 +571,7 @@ button{
 
 /*1번*/
 .mcard-intro .title[data-v-39666873] {
-	font-family: Chassam;
+	font-family: TAEBAEK;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
