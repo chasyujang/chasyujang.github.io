@@ -38,6 +38,11 @@
   font-family: 'SunBatang-m';
   src: url('../font/SunBatang-Medium.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Chassam';
+  src: url('../font/Chassam.ttf') format('truetype');
+}
+
 
 
 
@@ -562,7 +567,7 @@ button{
 
 /*1번*/
 .mcard-intro .title[data-v-39666873] {
-	font-family: SunBatang-m;
+	font-family: Chassam;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
