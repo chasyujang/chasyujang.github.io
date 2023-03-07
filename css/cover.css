@@ -327,6 +327,7 @@ header {
   background: none;
   border: none;
   color: #CC9999;
+  padding: 0rem;
 }
 
 .section4-sec3-g {
@@ -336,6 +337,7 @@ header {
   background: none;
   border: none;
   color: #CC9999;
+  padding: 0rem;
 }
 
 .section5 {
@@ -478,7 +480,7 @@ header {
   padding-bottom: 0.5em;
   margin: auto;
   margin-bottom: 0.7em;
-  width: 300px;
+  width: 400px;
 
 }
 
