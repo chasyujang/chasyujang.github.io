@@ -366,6 +366,12 @@ header {
 .section5-sub {
   font-family: Sunbatang-m;
   line-height: 1.5em;
+  font-size: 1.5rem;
+}
+
+.section5-sub2 {
+  font-family: Sunbatang-m;
+  line-height: 1.5em;
   font-size: 1.3rem;
 }
 
