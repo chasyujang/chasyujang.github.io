@@ -476,7 +476,10 @@ header {
   border-radius: 50px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  margin: auto;
   margin-bottom: 0.7em;
+  width: 300px;
+
 }
 
 .section7-button:hover {
