@@ -372,6 +372,13 @@ header {
 .section5-sub2 {
   font-family: Sunbatang-m;
   line-height: 1.5em;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.section5-sub3 {
+  font-family: Sunbatang-l;
+  line-height: 1.5em;
   font-size: 1.3rem;
 }
 
@@ -442,7 +449,7 @@ header {
 .section6-location-sub {
   font-family: sunbatang-l;
   line-height: 1.5em;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -462,6 +469,32 @@ header {
 
 .section7-modal-title {
   font-size: 1.4rem;
+}
+
+.modal-content2 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+	margin: auto;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-copy {
+    margin-bottom: 0;
+    line-height: 1.5;
+	margin: auto;
+}
+
+.section7-modal-copy {
+  font-size: 1.2rem;
 }
 
 .section7-modal-content {
@@ -595,7 +628,7 @@ button{
 
 /*1번*/
 .mcard-intro .title[data-v-39666873] {
-	font-family: SunBatang-m;
+	font-family: SunBatang-l;
     padding: 3rem 1rem;
     display: flex;
     background: #fff;
