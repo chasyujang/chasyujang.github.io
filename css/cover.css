@@ -273,7 +273,7 @@ header {
 .section2-sub {
   font-family: Sunbatang-l;
   line-height: 2em;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .section3 {
@@ -373,16 +373,16 @@ header {
 
 .section5-sub2 {
   font-family: Sunbatang-m;
-  line-height: 1.5em;
-  font-size: 1.1rem;
+  line-height: 0.2em;
+  font-size: 0.9rem;
   color: #BD4F4F;
   margin: 0;
 }
 
 .section5-sub3 {
-  font-family: Sunbatang-l;
+  font-family: Sunbatang-m;
   line-height: 1.5em;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .section5-table {
@@ -408,7 +408,7 @@ header {
 
 .section5-table tr .check{
   color: white;
-  background-color: chocolate;
+  background-color: #BD4F4F;
   border-radius: 50px;
 }
 
