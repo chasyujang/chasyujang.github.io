@@ -142,6 +142,7 @@ body {
 
 .cover-container {
   max-width: 42em;
+  margin: auto!important;
 }
 
 .cover-container-2 {
